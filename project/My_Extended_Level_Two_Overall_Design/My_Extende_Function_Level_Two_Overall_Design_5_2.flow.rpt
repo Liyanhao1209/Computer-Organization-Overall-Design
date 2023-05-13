@@ -1,0 +1,132 @@
+Flow report for My_Extende_Function_Level_Two_Overall_Design_5_2
+Thu May 11 22:21:29 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++------------------------------------+--------------------------------------------------+
+; Flow Status                        ; Successful - Thu May 11 22:21:29 2023            ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition          ;
+; Revision Name                      ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
+; Top-level Entity Name              ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
+; Family                             ; Cyclone II                                       ;
+; Device                             ; EP2C8Q208C8                                      ;
+; Timing Models                      ; Final                                            ;
+; Met timing requirements            ; No                                               ;
+; Total logic elements               ; 203 / 8,256 ( 2 % )                              ;
+;     Total combinational functions  ; 184 / 8,256 ( 2 % )                              ;
+;     Dedicated logic registers      ; 90 / 8,256 ( 1 % )                               ;
+; Total registers                    ; 90                                               ;
+; Total pins                         ; 129 / 138 ( 93 % )                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0 / 165,888 ( 0 % )                              ;
+; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                                   ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                    ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Flow Settings                                                        ;
++-------------------+--------------------------------------------------+
+; Option            ; Setting                                          ;
++-------------------+--------------------------------------------------+
+; Start date & time ; 05/11/2023 22:21:18                              ;
+; Main task         ; Compilation                                      ;
+; Revision Name     ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
++-------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                                               ;
++------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; Assignment Name                    ; Value                                                                                                                                                                                                      ; Default Value ; Entity Name ; Section Id     ;
++------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 109952948965505.168381487805056                                                                                                                                                                            ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                                                                                                                                                                                                         ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                                                                                                                                                                                                          ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/Administrator/Desktop/computer_organization/Experiment7_all_verison/Experiment_7_level_2_all_version/My_Extende_Level_Two_Overall_Design_5_2/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf ; --            ; --          ; --             ;
+; MISC_FILE                          ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extende_Level_Two_Overall_Design_5_2/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; F:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extende_Level_Two_Overall_Design_5_2/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/dell/Desktop/My_Extended_Level_Two_Overall_Design_5_4/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                                                                                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; F:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_5_4_MDR/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf           ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/dell/Desktop/My_Extended_Level_Two_Overall_Design_5_4_MDR/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                                                                                    ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/dell/Desktop/My_Extended_Level_Two_Overall_Design_5_4_MDR - 副本/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                                                                             ; --            ; --          ; --             ;
+; MISC_FILE                          ; C:/Users/dell/Desktop/My_Extended_Level_Two_Overall_Design_5_5_SUM_1/My_Extende_Function_Level_Two_Overall_Design_5_2.dpf                                                                                  ; --            ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                                                                                                                                                                                                   ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                                                                                                                                                                                                     ; --            ; --          ; Top            ;
+; SEARCH_PATH                        ; d:\computerorganization8.0\experiment2_4_bit_shifter/                                                                                                                                                      ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; d:\computerorganization8.0\experiment1_4_bit_register/                                                                                                                                                     ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; d:\computerorganization8.0\experiment1_8_bit_register/                                                                                                                                                     ; --            ; --          ; --             ;
+; SEARCH_PATH                        ; d:\computerorganization8.0\experiment1_8_bit_double_plexer/                                                                                                                                                ; --            ; --          ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                                                                                                                                                                        ; --            ; --          ; eda_blast_fpga ;
++------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 197 MB              ; 00:00:03                           ;
+; Fitter                  ; 00:00:03     ; 1.0                     ; 207 MB              ; 00:00:02                           ;
+; Assembler               ; 00:00:01     ; 1.0                     ; 186 MB              ; 00:00:01                           ;
+; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 147 MB              ; 00:00:01                           ;
+; Total                   ; 00:00:08     ; --                      ; --                  ; 00:00:07                           ;
++-------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                          ;
++-------------------------+------------------+---------------+------------+----------------+
+; Module Name             ; Machine Hostname ; OS Name       ; OS Version ; Processor type ;
++-------------------------+------------------+---------------+------------+----------------+
+; Analysis & Synthesis    ; stu403-38        ; Windows Vista ; 6.1        ; i686           ;
+; Fitter                  ; stu403-38        ; Windows Vista ; 6.1        ; i686           ;
+; Assembler               ; stu403-38        ; Windows Vista ; 6.1        ; i686           ;
+; Classic Timing Analyzer ; stu403-38        ; Windows Vista ; 6.1        ; i686           ;
++-------------------------+------------------+---------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off My_Extende_Function_Level_Two_Overall_Design_5_2 -c My_Extende_Function_Level_Two_Overall_Design_5_2
+quartus_fit --read_settings_files=off --write_settings_files=off My_Extende_Function_Level_Two_Overall_Design_5_2 -c My_Extende_Function_Level_Two_Overall_Design_5_2
+quartus_asm --read_settings_files=off --write_settings_files=off My_Extende_Function_Level_Two_Overall_Design_5_2 -c My_Extende_Function_Level_Two_Overall_Design_5_2
+quartus_tan --read_settings_files=off --write_settings_files=off My_Extende_Function_Level_Two_Overall_Design_5_2 -c My_Extende_Function_Level_Two_Overall_Design_5_2 --timing_analysis_only
+
+
+

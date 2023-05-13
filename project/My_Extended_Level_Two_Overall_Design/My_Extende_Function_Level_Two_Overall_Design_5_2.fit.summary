@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 11 22:21:25 2023
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : My_Extende_Function_Level_Two_Overall_Design_5_2
+Top-level Entity Name : My_Extende_Function_Level_Two_Overall_Design_5_2
+Family : Cyclone II
+Device : EP2C8Q208C8
+Timing Models : Final
+Total logic elements : 203 / 8,256 ( 2 % )
+    Total combinational functions : 184 / 8,256 ( 2 % )
+    Dedicated logic registers : 90 / 8,256 ( 1 % )
+Total registers : 90
+Total pins : 129 / 138 ( 93 % )
+Total virtual pins : 0
+Total memory bits : 0 / 165,888 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 36 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

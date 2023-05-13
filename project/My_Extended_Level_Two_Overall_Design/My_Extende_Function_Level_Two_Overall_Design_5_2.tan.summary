@@ -1,0 +1,166 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.559 ns
+From           : uIR22
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : --
+To Clock       : uIR16
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 19.848 ns
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R1|My_4_bit_register:inst5|inst9
+To             : YB2
+From Clock     : start
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.629 ns
+From           : uIR2
+To             : RAM-DATA0
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.966 ns
+From           : uIR5
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : --
+To Clock       : start
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR0'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 88.84 MHz ( period = 11.256 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : uIR0
+To Clock       : uIR0
+Failed Paths   : 0
+
+Type           : Clock Setup: 'pulse'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 88.84 MHz ( period = 11.256 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : pulse
+To Clock       : pulse
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 88.84 MHz ( period = 11.256 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : uIR1
+To Clock       : uIR1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'start'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 88.84 MHz ( period = 11.256 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : start
+To Clock       : start
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR16'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 89.33 MHz ( period = 11.195 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : uIR16
+To Clock       : uIR16
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR17'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 89.73 MHz ( period = 11.145 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : uIR17
+To Clock       : uIR17
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR15'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 92.13 MHz ( period = 10.854 ns )
+From           : My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5|inst8
+To             : My_8_bit_register:RZ|My_4_bit_register:inst|inst8
+From Clock     : uIR15
+To Clock       : uIR15
+Failed Paths   : 0
+
+Type           : Clock Hold: 'start'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : My_8_bit_register:IR|My_4_bit_register:inst|inst11
+To             : My_uPC:uPC|74161:inst1|f74161:sub|9
+From Clock     : start
+To Clock       : start
+Failed Paths   : 1
+
+Type           : Clock Hold: 'uIR1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : My_8_bit_register:IR|My_4_bit_register:inst|inst11
+To             : My_uPC:uPC|74161:inst1|f74161:sub|9
+From Clock     : uIR1
+To Clock       : uIR1
+Failed Paths   : 1
+
+Type           : Clock Hold: 'pulse'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : My_8_bit_register:IR|My_4_bit_register:inst|inst11
+To             : My_uPC:uPC|74161:inst1|f74161:sub|9
+From Clock     : pulse
+To Clock       : pulse
+Failed Paths   : 1
+
+Type           : Clock Hold: 'uIR0'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : My_8_bit_register:IR|My_4_bit_register:inst|inst11
+To             : My_uPC:uPC|74161:inst1|f74161:sub|9
+From Clock     : uIR0
+To Clock       : uIR0
+Failed Paths   : 1
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 4
+
+--------------------------------------------------------------------------------------
+

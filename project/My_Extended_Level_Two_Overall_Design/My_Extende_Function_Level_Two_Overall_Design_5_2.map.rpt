@@ -1,0 +1,574 @@
+Analysis & Synthesis report for My_Extende_Function_Level_Two_Overall_Design_5_2
+Thu May 11 22:21:22 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Parameter Settings for User Entity Instance: My_uPC:PC|74161:inst
+  9. Parameter Settings for User Entity Instance: My_uPC:PC|74161:inst1
+ 10. Parameter Settings for User Entity Instance: My_uPC:x|74161:inst
+ 11. Parameter Settings for User Entity Instance: My_uPC:x|74161:inst1
+ 12. Parameter Settings for User Entity Instance: My_uPC:uPC|74161:inst
+ 13. Parameter Settings for User Entity Instance: My_uPC:uPC|74161:inst1
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 11 22:21:21 2023            ;
+; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition          ;
+; Revision Name                      ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
+; Top-level Entity Name              ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
+; Family                             ; Cyclone II                                       ;
+; Total logic elements               ; 183                                              ;
+;     Total combinational functions  ; 183                                              ;
+;     Dedicated logic registers      ; 90                                               ;
+; Total registers                    ; 90                                               ;
+; Total pins                         ; 129                                              ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                                                        ;
++----------------------------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+; Option                                                         ; Setting                                          ; Default Value                                    ;
++----------------------------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+; Device                                                         ; EP2C8Q208C8                                      ;                                                  ;
+; Top-level entity name                                          ; My_Extende_Function_Level_Two_Overall_Design_5_2 ; My_Extende_Function_Level_Two_Overall_Design_5_2 ;
+; Family name                                                    ; Cyclone II                                       ; Stratix II                                       ;
+; Use Generated Physical Constraints File                        ; Off                                              ;                                                  ;
+; Use smart compilation                                          ; Off                                              ; Off                                              ;
+; Restructure Multiplexers                                       ; Auto                                             ; Auto                                             ;
+; Create Debugging Nodes for IP Cores                            ; Off                                              ; Off                                              ;
+; Preserve fewer node names                                      ; On                                               ; On                                               ;
+; Disable OpenCore Plus hardware evaluation                      ; Off                                              ; Off                                              ;
+; Verilog Version                                                ; Verilog_2001                                     ; Verilog_2001                                     ;
+; VHDL Version                                                   ; VHDL93                                           ; VHDL93                                           ;
+; State Machine Processing                                       ; Auto                                             ; Auto                                             ;
+; Safe State Machine                                             ; Off                                              ; Off                                              ;
+; Extract Verilog State Machines                                 ; On                                               ; On                                               ;
+; Extract VHDL State Machines                                    ; On                                               ; On                                               ;
+; Ignore Verilog initial constructs                              ; Off                                              ; Off                                              ;
+; Iteration limit for constant Verilog loops                     ; 5000                                             ; 5000                                             ;
+; Iteration limit for non-constant Verilog loops                 ; 250                                              ; 250                                              ;
+; Add Pass-Through Logic to Inferred RAMs                        ; On                                               ; On                                               ;
+; Parallel Synthesis                                             ; Off                                              ; Off                                              ;
+; DSP Block Balancing                                            ; Auto                                             ; Auto                                             ;
+; NOT Gate Push-Back                                             ; On                                               ; On                                               ;
+; Power-Up Don't Care                                            ; On                                               ; On                                               ;
+; Remove Redundant Logic Cells                                   ; Off                                              ; Off                                              ;
+; Remove Duplicate Registers                                     ; On                                               ; On                                               ;
+; Ignore CARRY Buffers                                           ; Off                                              ; Off                                              ;
+; Ignore CASCADE Buffers                                         ; Off                                              ; Off                                              ;
+; Ignore GLOBAL Buffers                                          ; Off                                              ; Off                                              ;
+; Ignore ROW GLOBAL Buffers                                      ; Off                                              ; Off                                              ;
+; Ignore LCELL Buffers                                           ; Off                                              ; Off                                              ;
+; Ignore SOFT Buffers                                            ; On                                               ; On                                               ;
+; Limit AHDL Integers to 32 Bits                                 ; Off                                              ; Off                                              ;
+; Optimization Technique                                         ; Balanced                                         ; Balanced                                         ;
+; Carry Chain Length                                             ; 70                                               ; 70                                               ;
+; Auto Carry Chains                                              ; On                                               ; On                                               ;
+; Auto Open-Drain Pins                                           ; On                                               ; On                                               ;
+; Perform WYSIWYG Primitive Resynthesis                          ; Off                                              ; Off                                              ;
+; Perform gate-level register retiming                           ; Off                                              ; Off                                              ;
+; Allow register retiming to trade off Tsu/Tco with Fmax         ; On                                               ; On                                               ;
+; Auto ROM Replacement                                           ; On                                               ; On                                               ;
+; Auto RAM Replacement                                           ; On                                               ; On                                               ;
+; Auto Shift Register Replacement                                ; Auto                                             ; Auto                                             ;
+; Auto Clock Enable Replacement                                  ; On                                               ; On                                               ;
+; Strict RAM Replacement                                         ; Off                                              ; Off                                              ;
+; Allow Synchronous Control Signals                              ; On                                               ; On                                               ;
+; Force Use of Synchronous Clear Signals                         ; Off                                              ; Off                                              ;
+; Auto RAM to Logic Cell Conversion                              ; Off                                              ; Off                                              ;
+; Auto Resource Sharing                                          ; Off                                              ; Off                                              ;
+; Allow Any RAM Size For Recognition                             ; Off                                              ; Off                                              ;
+; Allow Any ROM Size For Recognition                             ; Off                                              ; Off                                              ;
+; Allow Any Shift Register Size For Recognition                  ; Off                                              ; Off                                              ;
+; Use LogicLock Constraints during Resource Balancing            ; On                                               ; On                                               ;
+; Ignore translate_off and synthesis_off directives              ; Off                                              ; Off                                              ;
+; Show Parameter Settings Tables in Synthesis Report             ; On                                               ; On                                               ;
+; Ignore Maximum Fan-Out Assignments                             ; Off                                              ; Off                                              ;
+; Synchronization Register Chain Length                          ; 2                                                ; 2                                                ;
+; PowerPlay Power Optimization                                   ; Normal compilation                               ; Normal compilation                               ;
+; HDL message level                                              ; Level2                                           ; Level2                                           ;
+; Suppress Register Optimization Related Messages                ; Off                                              ; Off                                              ;
+; Number of Removed Registers Reported in Synthesis Report       ; 100                                              ; 100                                              ;
+; Number of Inverted Registers Reported in Synthesis Report      ; 100                                              ; 100                                              ;
+; Clock MUX Protection                                           ; On                                               ; On                                               ;
+; Auto Gated Clock Conversion                                    ; Off                                              ; Off                                              ;
+; Block Design Naming                                            ; Auto                                             ; Auto                                             ;
+; SDC constraint protection                                      ; Off                                              ; Off                                              ;
+; Synthesis Effort                                               ; Auto                                             ; Auto                                             ;
+; Allows Asynchronous Clear Usage For Shift Register Replacement ; On                                               ; On                                               ;
+; Analysis & Synthesis Message Level                             ; Medium                                           ; Medium                                           ;
++----------------------------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                                          ;
++------------------------------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                                                                                                                ;
++------------------------------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; My_Extende_Function_Level_Two_Overall_Design_5_2.bdf ; yes             ; User Block Diagram/Schematic File        ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_Extende_Function_Level_Two_Overall_Design_5_2.bdf ;
+; My_8_bit_register.bdf                                ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_8_bit_register.bdf                                ;
+; My_4_bit_register.bdf                                ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_4_bit_register.bdf                                ;
+; My_Starter.bdf                                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_Starter.bdf                                       ;
+; My_24_decoder.bdf                                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_24_decoder.bdf                                    ;
+; my_38_decoder.bdf                                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/my_38_decoder.bdf                                    ;
+; My_8_bit_shifter.bdf                                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_8_bit_shifter.bdf                                 ;
+; My_ALU.bdf                                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_ALU.bdf                                           ;
+; 74181.bdf                                            ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74181.bdf                                                                                                                                                    ;
+; 74182.bdf                                            ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74182.bdf                                                                                                                                                    ;
+; My_4_register_group.bdf                              ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_4_register_group.bdf                              ;
+; My_8_bit_four_plexer.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_8_bit_four_plexer.bdf                             ;
+; My_8_bit_double_plexer.bdf                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_8_bit_double_plexer.bdf                           ;
+; My_IR_Decoder.bdf                                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_IR_Decoder.bdf                                    ;
+; My_Complementer.bdf                                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_Complementer.bdf                                  ;
+; My_Tri_Gate.bdf                                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_Tri_Gate.bdf                                      ;
+; My_uPC.bdf                                           ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_uPC.bdf                                           ;
+; 74161.tdf                                            ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/74161.tdf                                                                                                                                                    ;
+; aglobal.inc                                          ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/megafunctions/aglobal.inc                                                                                                                                                    ;
+; f74161.bdf                                           ; yes             ; Megafunction                             ; c:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf                                                                                                                                                   ;
+; My_8_bit_judge.bdf                                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; E:/大二下/ComputerOrganization/Experiment7_all_version/Experiment7_Extended_Function_Level_Two/My_Extended_Level_Two_Overall_Design_success_1_pulse131/My_8_bit_judge.bdf                                   ;
++------------------------------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                      ;
++---------------------------------------------+----------------------------------------------------+
+; Resource                                    ; Usage                                              ;
++---------------------------------------------+----------------------------------------------------+
+; Estimated Total logic elements              ; 183                                                ;
+;                                             ;                                                    ;
+; Total combinational functions               ; 183                                                ;
+; Logic element usage by number of LUT inputs ;                                                    ;
+;     -- 4 input functions                    ; 147                                                ;
+;     -- 3 input functions                    ; 24                                                 ;
+;     -- <=2 input functions                  ; 12                                                 ;
+;                                             ;                                                    ;
+; Logic elements by mode                      ;                                                    ;
+;     -- normal mode                          ; 183                                                ;
+;     -- arithmetic mode                      ; 0                                                  ;
+;                                             ;                                                    ;
+; Total registers                             ; 90                                                 ;
+;     -- Dedicated logic registers            ; 90                                                 ;
+;     -- I/O registers                        ; 0                                                  ;
+;                                             ;                                                    ;
+; I/O pins                                    ; 129                                                ;
+; Maximum fan-out node                        ; My_8_bit_register:IR|My_4_bit_register:inst5|inst9 ;
+; Maximum fan-out                             ; 18                                                 ;
+; Total fan-out                               ; 931                                                ;
+; Average fan-out                             ; 2.32                                               ;
++---------------------------------------------+----------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                         ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Library Name ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |My_Extende_Function_Level_Two_Overall_Design_5_2 ; 183 (13)          ; 90 (1)       ; 0           ; 0            ; 0       ; 0         ; 129  ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2                                                                                            ; work         ;
+;    |My_4_register_group:Reg_Group|                ; 23 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group                                                              ; work         ;
+;       |My_8_bit_four_plexer:TO_A_PLEXER|          ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_A_PLEXER                             ; work         ;
+;          |My_8_bit_double_plexer:2To1|            ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_A_PLEXER|My_8_bit_double_plexer:2To1 ; work         ;
+;       |My_8_bit_four_plexer:TO_B_PLEXER|          ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_B_PLEXER                             ; work         ;
+;          |My_8_bit_double_plexer:2To1|            ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_B_PLEXER|My_8_bit_double_plexer:2To1 ; work         ;
+;       |My_8_bit_register:R0|                      ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R0                                         ; work         ;
+;          |My_4_bit_register:inst5|                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst5                 ; work         ;
+;          |My_4_bit_register:inst|                 ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R0|My_4_bit_register:inst                  ; work         ;
+;       |My_8_bit_register:R1|                      ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R1                                         ; work         ;
+;          |My_4_bit_register:inst5|                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R1|My_4_bit_register:inst5                 ; work         ;
+;          |My_4_bit_register:inst|                 ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R1|My_4_bit_register:inst                  ; work         ;
+;       |My_8_bit_register:R2|                      ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R2                                         ; work         ;
+;          |My_4_bit_register:inst5|                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R2|My_4_bit_register:inst5                 ; work         ;
+;          |My_4_bit_register:inst|                 ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R2|My_4_bit_register:inst                  ; work         ;
+;       |My_8_bit_register:R3|                      ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R3                                         ; work         ;
+;          |My_4_bit_register:inst5|                ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R3|My_4_bit_register:inst5                 ; work         ;
+;          |My_4_bit_register:inst|                 ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_4_register_group:Reg_Group|My_8_bit_register:R3|My_4_bit_register:inst                  ; work         ;
+;    |My_8_bit_four_plexer:A_PLEXER|                ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:A_PLEXER                                                              ; work         ;
+;       |My_8_bit_double_plexer:2To1|               ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:A_PLEXER|My_8_bit_double_plexer:2To1                                  ; work         ;
+;    |My_8_bit_four_plexer:B_PLEXER|                ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:B_PLEXER                                                              ; work         ;
+;       |My_8_bit_double_plexer:2To1|               ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:B_PLEXER|My_8_bit_double_plexer:2To1                                  ; work         ;
+;    |My_8_bit_four_plexer:MDR_PLEXER|              ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:MDR_PLEXER                                                            ; work         ;
+;       |My_8_bit_double_plexer:2To1|               ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_four_plexer:MDR_PLEXER|My_8_bit_double_plexer:2To1                                ; work         ;
+;    |My_8_bit_judge:inst64|                        ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_judge:inst64                                                                      ; work         ;
+;    |My_8_bit_register:IR|                         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:IR                                                                       ; work         ;
+;       |My_4_bit_register:inst5|                   ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:IR|My_4_bit_register:inst5                                               ; work         ;
+;       |My_4_bit_register:inst|                    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:IR|My_4_bit_register:inst                                                ; work         ;
+;    |My_8_bit_register:MAR|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MAR                                                                      ; work         ;
+;       |My_4_bit_register:inst5|                   ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MAR|My_4_bit_register:inst5                                              ; work         ;
+;       |My_4_bit_register:inst|                    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MAR|My_4_bit_register:inst                                               ; work         ;
+;    |My_8_bit_register:MDR|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MDR                                                                      ; work         ;
+;       |My_4_bit_register:inst5|                   ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MDR|My_4_bit_register:inst5                                              ; work         ;
+;       |My_4_bit_register:inst|                    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:MDR|My_4_bit_register:inst                                               ; work         ;
+;    |My_8_bit_register:RZ|                         ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:RZ                                                                       ; work         ;
+;       |My_4_bit_register:inst5|                   ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:RZ|My_4_bit_register:inst5                                               ; work         ;
+;       |My_4_bit_register:inst|                    ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_register:RZ|My_4_bit_register:inst                                                ; work         ;
+;    |My_8_bit_shifter:SHIFTER|                     ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_8_bit_shifter:SHIFTER                                                                   ; work         ;
+;    |My_ALU:ALU|                                   ; 47 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_ALU:ALU                                                                                 ; work         ;
+;       |74181:inst1|                               ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_ALU:ALU|74181:inst1                                                                     ; work         ;
+;       |74181:inst|                                ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_ALU:ALU|74181:inst                                                                      ; work         ;
+;       |74182:inst4|                               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_ALU:ALU|74182:inst4                                                                     ; work         ;
+;    |My_Complementer:inst1|                        ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_Complementer:inst1                                                                      ; work         ;
+;       |My_ALU:inst12|                             ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_Complementer:inst1|My_ALU:inst12                                                        ; work         ;
+;          |74181:inst1|                            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_Complementer:inst1|My_ALU:inst12|74181:inst1                                            ; work         ;
+;          |74181:inst|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_Complementer:inst1|My_ALU:inst12|74181:inst                                             ; work         ;
+;    |My_Starter:inst27|                            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_Starter:inst27                                                                          ; work         ;
+;    |My_uPC:PC|                                    ; 14 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:PC                                                                                  ; work         ;
+;       |74161:inst1|                               ; 9 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:PC|74161:inst1                                                                      ; work         ;
+;          |f74161:sub|                             ; 9 (9)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:PC|74161:inst1|f74161:sub                                                           ; work         ;
+;       |74161:inst|                                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:PC|74161:inst                                                                       ; work         ;
+;          |f74161:sub|                             ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:PC|74161:inst|f74161:sub                                                            ; work         ;
+;    |My_uPC:uPC|                                   ; 15 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:uPC                                                                                 ; work         ;
+;       |74161:inst1|                               ; 10 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:uPC|74161:inst1                                                                     ; work         ;
+;          |f74161:sub|                             ; 10 (10)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:uPC|74161:inst1|f74161:sub                                                          ; work         ;
+;       |74161:inst|                                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:uPC|74161:inst                                                                      ; work         ;
+;          |f74161:sub|                             ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:uPC|74161:inst|f74161:sub                                                           ; work         ;
+;    |My_uPC:x|                                     ; 10 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:x                                                                                   ; work         ;
+;       |74161:inst1|                               ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:x|74161:inst1                                                                       ; work         ;
+;          |f74161:sub|                             ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:x|74161:inst1|f74161:sub                                                            ; work         ;
+;       |74161:inst|                                ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:x|74161:inst                                                                        ; work         ;
+;          |f74161:sub|                             ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |My_Extende_Function_Level_Two_Overall_Design_5_2|My_uPC:x|74161:inst|f74161:sub                                                             ; work         ;
++---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 90    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 17    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:PC|74161:inst ;
++------------------------+------------+-----------------------------+
+; Parameter Name         ; Value      ; Type                        ;
++------------------------+------------+-----------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                     ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE              ;
++------------------------+------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:PC|74161:inst1 ;
++------------------------+------------+------------------------------+
+; Parameter Name         ; Value      ; Type                         ;
++------------------------+------------+------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                      ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE               ;
++------------------------+------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:x|74161:inst ;
++------------------------+------------+----------------------------+
+; Parameter Name         ; Value      ; Type                       ;
++------------------------+------------+----------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                    ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE             ;
++------------------------+------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:x|74161:inst1 ;
++------------------------+------------+-----------------------------+
+; Parameter Name         ; Value      ; Type                        ;
++------------------------+------------+-----------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                     ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE              ;
++------------------------+------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:uPC|74161:inst ;
++------------------------+------------+------------------------------+
+; Parameter Name         ; Value      ; Type                         ;
++------------------------+------------+------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                      ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                 ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE               ;
++------------------------+------------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: My_uPC:uPC|74161:inst1 ;
++------------------------+------------+-------------------------------+
+; Parameter Name         ; Value      ; Type                          ;
++------------------------+------------+-------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                       ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                ;
++------------------------+------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Thu May 11 22:21:18 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off My_Extende_Function_Level_Two_Overall_Design_5_2 -c My_Extende_Function_Level_Two_Overall_Design_5_2
+Info: Found 1 design units, including 1 entities, in source file My_Extende_Function_Level_Two_Overall_Design_5_2.bdf
+    Info: Found entity 1: My_Extende_Function_Level_Two_Overall_Design_5_2
+Info: Elaborating entity "My_Extende_Function_Level_Two_Overall_Design_5_2" for the top level hierarchy
+Warning: Pin "PC0" is missing source
+Warning: Pin "PC2" is missing source
+Warning: Pin "PC3" is missing source
+Warning: Pin "PC4" is missing source
+Warning: Pin "PC5" is missing source
+Warning: Pin "PC6" is missing source
+Warning: Pin "PC7" is missing source
+Warning: Pin "PC1" is missing source
+Warning: Pin "RZ0" is missing source
+Warning: Pin "RZ1" is missing source
+Warning: Pin "RZ2" is missing source
+Warning: Pin "RZ3" is missing source
+Warning: Pin "RZ4" is missing source
+Warning: Pin "RZ5" is missing source
+Warning: Pin "RZ6" is missing source
+Warning: Pin "RZ7" is missing source
+Warning: Pin "X0" is missing source
+Warning: Pin "X1" is missing source
+Warning: Pin "X2" is missing source
+Warning: Pin "X3" is missing source
+Warning: Pin "X4" is missing source
+Warning: Pin "X5" is missing source
+Warning: Pin "X6" is missing source
+Warning: Pin "X7" is missing source
+Warning: Pin "MAR7" is missing source
+Warning: Pin "MAR6" is missing source
+Warning: Pin "MAR5" is missing source
+Warning: Pin "MAR4" is missing source
+Warning: Pin "MAR3" is missing source
+Warning: Pin "MAR2" is missing source
+Warning: Pin "MAR1" is missing source
+Warning: Pin "MAR0" is missing source
+Warning: Pin "BUS7" is missing source
+Warning: Pin "BUS6" is missing source
+Warning: Pin "BUS5" is missing source
+Warning: Pin "BUS4" is missing source
+Warning: Pin "BUS3" is missing source
+Warning: Pin "BUS2" is missing source
+Warning: Pin "BUS1" is missing source
+Warning: Pin "BUS0" is missing source
+Warning: Pin "COMPLE7" is missing source
+Warning: Pin "COMPLE6" is missing source
+Warning: Pin "COMPLE5" is missing source
+Warning: Pin "COMPLE4" is missing source
+Warning: Pin "COMPLE3" is missing source
+Warning: Pin "COMPLE2" is missing source
+Warning: Pin "COMPLE1" is missing source
+Warning: Pin "COMPLE0" is missing source
+Warning: Pin "YA0" is missing source
+Warning: Pin "YA1" is missing source
+Warning: Pin "YA2" is missing source
+Warning: Pin "YA3" is missing source
+Warning: Pin "YA4" is missing source
+Warning: Pin "YA5" is missing source
+Warning: Pin "YA6" is missing source
+Warning: Pin "YA7" is missing source
+Warning: Pin "SYM" is missing source
+Warning: Using design file My_8_bit_register.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_8_bit_register
+Info: Elaborating entity "My_8_bit_register" for hierarchy "My_8_bit_register:MAR"
+Warning: Using design file My_4_bit_register.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_4_bit_register
+Info: Elaborating entity "My_4_bit_register" for hierarchy "My_8_bit_register:MAR|My_4_bit_register:inst"
+Warning: Using design file My_Starter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_Starter
+Info: Elaborating entity "My_Starter" for hierarchy "My_Starter:inst27"
+Warning: Using design file My_24_decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_24_decoder
+Info: Elaborating entity "My_24_decoder" for hierarchy "My_24_decoder:inst45"
+Warning: Using design file my_38_decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: my_38_decoder
+Info: Elaborating entity "my_38_decoder" for hierarchy "my_38_decoder:inst24"
+Warning: Using design file My_8_bit_shifter.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_8_bit_shifter
+Info: Elaborating entity "My_8_bit_shifter" for hierarchy "My_8_bit_shifter:SHIFTER"
+Warning: Using design file My_ALU.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_ALU
+Info: Elaborating entity "My_ALU" for hierarchy "My_ALU:ALU"
+Info: Elaborating entity "74181" for hierarchy "My_ALU:ALU|74181:inst"
+Info: Elaborated megafunction instantiation "My_ALU:ALU|74181:inst"
+Info: Elaborating entity "74182" for hierarchy "My_ALU:ALU|74182:inst4"
+Info: Elaborated megafunction instantiation "My_ALU:ALU|74182:inst4"
+Warning: Using design file My_4_register_group.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_4_register_group
+Info: Elaborating entity "My_4_register_group" for hierarchy "My_4_register_group:Reg_Group"
+Warning: Using design file My_8_bit_four_plexer.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_8_bit_four_plexer
+Info: Elaborating entity "My_8_bit_four_plexer" for hierarchy "My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_A_PLEXER"
+Warning: Using design file My_8_bit_double_plexer.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_8_bit_double_plexer
+Info: Elaborating entity "My_8_bit_double_plexer" for hierarchy "My_4_register_group:Reg_Group|My_8_bit_four_plexer:TO_A_PLEXER|My_8_bit_double_plexer:2To1"
+Warning: Using design file My_IR_Decoder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_IR_Decoder
+Info: Elaborating entity "My_IR_Decoder" for hierarchy "My_IR_Decoder:IR_DECODER"
+Warning: Using design file My_Complementer.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_Complementer
+Info: Elaborating entity "My_Complementer" for hierarchy "My_Complementer:inst1"
+Warning: Using design file My_Tri_Gate.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_Tri_Gate
+Info: Elaborating entity "My_Tri_Gate" for hierarchy "My_Tri_Gate:inst48"
+Warning: Using design file My_uPC.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_uPC
+Info: Elaborating entity "My_uPC" for hierarchy "My_uPC:PC"
+Info: Elaborating entity "74161" for hierarchy "My_uPC:PC|74161:inst"
+Info: Elaborated megafunction instantiation "My_uPC:PC|74161:inst"
+Info: Elaborating entity "f74161" for hierarchy "My_uPC:PC|74161:inst|f74161:sub"
+Info: Elaborated megafunction instantiation "My_uPC:PC|74161:inst|f74161:sub", which is child of megafunction instantiation "My_uPC:PC|74161:inst"
+Info: Elaborating entity "74161" for hierarchy "My_uPC:PC|74161:inst1"
+Info: Elaborated megafunction instantiation "My_uPC:PC|74161:inst1"
+Warning: Using design file My_8_bit_judge.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: My_8_bit_judge
+Info: Elaborating entity "My_8_bit_judge" for hierarchy "My_8_bit_judge:inst64"
+Info: Ignored 76 buffer(s)
+    Info: Ignored 24 CARRY buffer(s)
+    Info: Ignored 52 SOFT buffer(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst2" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst3" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst4" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst5" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst6" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst7" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "My_Tri_Gate:inst48|inst8" feeding internal logic into a wire
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "uRD" is stuck at GND
+    Warning (13410): Pin "PC0" is stuck at GND
+    Warning (13410): Pin "PC2" is stuck at GND
+    Warning (13410): Pin "PC3" is stuck at GND
+    Warning (13410): Pin "PC4" is stuck at GND
+    Warning (13410): Pin "PC5" is stuck at GND
+    Warning (13410): Pin "PC6" is stuck at GND
+    Warning (13410): Pin "PC7" is stuck at GND
+    Warning (13410): Pin "PC1" is stuck at GND
+    Warning (13410): Pin "RZ0" is stuck at GND
+    Warning (13410): Pin "RZ1" is stuck at GND
+    Warning (13410): Pin "RZ2" is stuck at GND
+    Warning (13410): Pin "RZ3" is stuck at GND
+    Warning (13410): Pin "RZ4" is stuck at GND
+    Warning (13410): Pin "RZ5" is stuck at GND
+    Warning (13410): Pin "RZ6" is stuck at GND
+    Warning (13410): Pin "RZ7" is stuck at GND
+    Warning (13410): Pin "X0" is stuck at GND
+    Warning (13410): Pin "X1" is stuck at GND
+    Warning (13410): Pin "X2" is stuck at GND
+    Warning (13410): Pin "X3" is stuck at GND
+    Warning (13410): Pin "X4" is stuck at GND
+    Warning (13410): Pin "X5" is stuck at GND
+    Warning (13410): Pin "X6" is stuck at GND
+    Warning (13410): Pin "X7" is stuck at GND
+    Warning (13410): Pin "MAR7" is stuck at GND
+    Warning (13410): Pin "MAR6" is stuck at GND
+    Warning (13410): Pin "MAR5" is stuck at GND
+    Warning (13410): Pin "MAR4" is stuck at GND
+    Warning (13410): Pin "MAR3" is stuck at GND
+    Warning (13410): Pin "MAR2" is stuck at GND
+    Warning (13410): Pin "MAR1" is stuck at GND
+    Warning (13410): Pin "MAR0" is stuck at GND
+    Warning (13410): Pin "BUS7" is stuck at GND
+    Warning (13410): Pin "BUS6" is stuck at GND
+    Warning (13410): Pin "BUS5" is stuck at GND
+    Warning (13410): Pin "BUS4" is stuck at GND
+    Warning (13410): Pin "BUS3" is stuck at GND
+    Warning (13410): Pin "BUS2" is stuck at GND
+    Warning (13410): Pin "BUS1" is stuck at GND
+    Warning (13410): Pin "BUS0" is stuck at GND
+    Warning (13410): Pin "COMPLE7" is stuck at GND
+    Warning (13410): Pin "COMPLE6" is stuck at GND
+    Warning (13410): Pin "COMPLE5" is stuck at GND
+    Warning (13410): Pin "COMPLE4" is stuck at GND
+    Warning (13410): Pin "COMPLE3" is stuck at GND
+    Warning (13410): Pin "COMPLE2" is stuck at GND
+    Warning (13410): Pin "COMPLE1" is stuck at GND
+    Warning (13410): Pin "COMPLE0" is stuck at GND
+    Warning (13410): Pin "YA0" is stuck at GND
+    Warning (13410): Pin "YA1" is stuck at GND
+    Warning (13410): Pin "YA2" is stuck at GND
+    Warning (13410): Pin "YA3" is stuck at GND
+    Warning (13410): Pin "YA4" is stuck at GND
+    Warning (13410): Pin "YA5" is stuck at GND
+    Warning (13410): Pin "YA6" is stuck at GND
+    Warning (13410): Pin "YA7" is stuck at GND
+    Warning (13410): Pin "SYM" is stuck at GND
+Info: Implemented 362 device resources after synthesis - the final resource count might be different
+    Info: Implemented 27 input pins
+    Info: Implemented 94 output pins
+    Info: Implemented 8 bidirectional pins
+    Info: Implemented 233 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 140 warnings
+    Info: Peak virtual memory: 197 megabytes
+    Info: Processing ended: Thu May 11 22:21:22 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
